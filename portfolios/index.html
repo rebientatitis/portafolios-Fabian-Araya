@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabian Araya Deb</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="/css/styles.css"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- navegacion -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 bg-white shadow-md z-40 transition-all duration-300">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <a href="javascript:void(0)" class="text-2xl font-bold text-blue-600">Portafolio</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#about" class="text-gray-700 hover:text-blue-600 transition">sobre mi</a>
+          <a href="#skills" class="text-gray-700 hover:text-blue-600 transition">Habilidades</a>
+          <a href="#projects" class="text-gray-700 hover:text-blue-600 transition">Proyectos</a>
+          <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contacto</a>
+        </div>
+        <button id="menu-button" class="md:hidden text-gray-700">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+      <div class="container mx-auto px-4 py-2 space-y-2">
+        <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600 transition">sobre mi</a>
+        <a href="#skills" class="block py-2 text-gray-700 hover:text-blue-600 transition">Habilidades</a>
+        <a href="#projects" class="block py-2 text-gray-700 hover:text-blue-600 transition">Proyectos</a>
+        <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600 transition">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-16">
+    <section id="about" class="min-h-screen flex items-center bg-gradient-to-r from-blue-50 to-indigo-50 py-20">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col-reverse md:flex-row items-center justify-between">
+          <div class="md:w-1/2 mt-10 md:mt-0">
+            <div class="relative">
+              <h1 id="name" class="text-4xl md:text-5xl font-bold mb-2 text-gray-800"></h1>
+              <h2 id="title" class="text-2xl md:text-3xl font-semibold mb-6 text-blue-600"></h2>
+              <p id="bio" class="text-lg text-gray-600 mb-8 max-w-xl">
+
+              </p>
+              <div class="flex space-x-4">
+                <a href="javascript:void(0)" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition flex items-center">
+                  <i class="fas fa-envelope mr-2"></i> Contacto
+                </a>
+                <a href="javascript:void(0)" class="bg-gray-200 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-300 transition flex items-center">
+                  <i class="fas fa-file-alt mr-2"></i> Resumen
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2 flex justify-center">
+            <div class="relative w-64 h-64 md:w-80 md:h-80">
+              <img id="perfil-img" src="" alt="Perfil" class="rounded-full shadow-2xl object-cover w-full h-full border-4 border-white">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- habilidades -->
+    <section id="skills" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="relative max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Mis Habilidades</h2>
+          <div id="skills-container" class="flex flex-wrap justify-center gap-3">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- proyectos -->
+    <section id="projects" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="relative max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Mis Proyectos</h2>
+          <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- imprimir proyectos -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="py-20 bg-blue-600 text-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-2xl mx-auto relative">
+          <h2 class="text-3xl font-bold text-center mb-12">Ponte en Contacto</h2>
+          <div id="contact-info" class="text-center mb-8">
+            <p id="email" class="text-xl mb-2"><i class="fas fa-envelope mr-2"></i></p>
+            <p id="phone" class="text-xl"><i class="fas fa-phone mr-2"></i></p>
+          </div>
+          <div class="flex justify-center space-x-6 mb-10">
+            <a href="https://github.com/rebientatitis" class="bg-white text-blue-600 rounded-full p-3 hover:bg-gray-100 transition" target="_blank" rel="noopener"><i class="fab fa-github text-xl"></i></a>
+            <a href="https://www.linkedin.com/in/fabian-araya-zarricueta-a0286a339" class="bg-white text-blue-600 rounded-full p-3 hover:bg-gray-100 transition" target="_blank" rel="noopener"><i class="fab fa-linkedin text-xl"></i></a>
+            <a href="javascript:void(0)" class="bg-white text-blue-600 rounded-full p-3 hover:bg-gray-100 transition"><i class="fab fa-twitter text-xl"></i></a>
+          </div>
+          <form id="contacto-form" class="space-y-4">
+            <div>
+              <input type="text" placeholder="Nombre" class="w-full px-4 py-3 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            </div>
+            <div>
+              <input type="email" placeholder="correo" class="w-full px-4 py-3 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            </div>
+            <div>
+              <textarea rows="5" placeholder="Mensaje" class="w-full px-4 py-3 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="w-full bg-white text-blue-600 font-bold py-3 rounded hover:bg-gray-100 transition">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>© <span id="year"></span> <span>Fabian Araya Zarricueta</span>. derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="/js/script.js"></script>
+</body>
+</html>
