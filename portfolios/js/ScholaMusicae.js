@@ -21,7 +21,7 @@ const content = {
             id: 3,
             title: "Interfaz de Usuario",
             explain: "La interfaz es intuitiva y está diseñada para ofrecer una experiencia de usuario fluida.",
-            img: "",
+            img: "https://cdn.pixabay.com/photo/2025/06/27/00/20/00-20-49-406__340.png",
         }
     ]
 }
