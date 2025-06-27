@@ -15,13 +15,13 @@ const content = {
             id:2,
             title: "Administración de Datos",
             explain: "La sección de administración permite agregar, editar y eliminar información de mascotas, clientes, productos, empleados, etc. Lo que facilita la gestión de datos.",
-            img: "https://cdn.pixabay.com/photo/2025/06/21/20/20/20-20-12-559__340.jpg",
+            img: "https://cdn.pixabay.com/photo/2025/06/27/00/35/00-35-18-800__340.png",
         },
         {
             id:1,
             title: "Interfaz de Usuario",
             explain: "La interfaz es amigable y fácil de usar, con un diseño responsivo que se adapta a diferentes dispositivos.",
-            img: "https://cdn.pixabay.com/photo/2025/06/21/20/20/20-20-12-559__340.jpg",
+            img: "https://cdn.pixabay.com/photo/2025/06/27/00/32/00-32-52-312__340.png",
         }
 
     ]
