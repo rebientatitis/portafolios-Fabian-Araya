@@ -20,6 +20,7 @@ const contenido = {
       img: "https://cdn.pixabay.com/photo/2019/04/26/07/14/store-4156934_1280.png",
       techs: "Java, SQL server, NetBeans",
       repoUrl: "https://github.com/rebientatitis?tab=repositories",
+      url:"/CompuInsumos.html"
     },
     {
       id: 2,
@@ -28,6 +29,7 @@ const contenido = {
       img: "https://cdn.pixabay.com/photo/2025/06/21/20/15/20-15-59-164_640.jpg",
       techs: "C#, Visual Studio 2022, Xamarin.Forms",
       repoUrl: "https://github.com/rebientatitis?tab=repositories",
+      url:"/ScholaMusicae.html"
     },
     {
       id: 3,
@@ -35,7 +37,8 @@ const contenido = {
       desc: "Una aplicación web para realizar compras en linea de productos veganos y que permite gestionar infomacion importante sobre la sucursal como productos e inventario.",
       img: "https://cdn.pixabay.com/photo/2025/06/21/20/25/20-25-41-326__340.png",
       techs: "JavaScript, Node.js, Express, SQLITE, Telegram Bot API",
-      repoUrl: "https://github.com/rebientatitis?tab=repositories",
+      repoUrl: "https://github.com/rebientatitis?tab=repositories", 
+      url:"/VerdeVital.html"
     },
     {
       id: 4,
@@ -44,22 +47,7 @@ const contenido = {
       img: "https://cdn.pixabay.com/photo/2025/06/21/20/20/20-20-12-559__340.jpg",
       techs: "C#, ASP.NET Core, Entity Framework, SQL Server",
       repoUrl: "https://github.com/rebientatitis?tab=repositories",
-    },
-    {
-      id: 5,
-      title: "",
-      desc: "",
-      img: "",
-      techs: "",
-      repoUrl: "",
-    },
-    {
-      id: 6,
-      title: "",
-      desc: "",
-      img: "",
-      techs: "",
-      repoUrl: "",
+      url:"/PetShop.html"
     }
   ],
   contacto: {
@@ -114,8 +102,10 @@ function updateUI(data) {
             <a href="${project.repoUrl}" class="bg-gray-800 text-white px-3 py-1 rounded text-sm hover:bg-gray-900 transition" target="_blank" rel="noopener">
               <i class="fab fa-github mr-1"></i> Repo
             </a>
+            <a href="${project.url}" class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700 transition" target="_blank" rel="noopener">  
+              <i class="fas fa-external-link-alt mr-1"></i> Ver Proyecto
+            </a>
           </div>
-        </div>
       </div>
     `);
     projectsContainer.append(projectCard);
@@ -159,18 +149,18 @@ function setupEventListeners() {
   // Formulario de contacto (solo mensaje informativo)
   $('#contacto-form').on('submit', function(e) {
     e.preventDefault();
-    alert('Este formulario es de demostración.');
+    alert('Al enviar el formulario, se abrirá una ventana para validar que eres una persona real.');
   });
 }
 
 // Actualizar año en el footer
-function updateCurrentYear() {
+function ActualizarYear() {
   $('#year').text(new Date().getFullYear());
 }
 
 // Inicializar la aplicación 
 $(document).ready(function() {
-  updateCurrentYear();
+  ActualizarYear();
   setupEventListeners();
   cargarDatos();
 }
