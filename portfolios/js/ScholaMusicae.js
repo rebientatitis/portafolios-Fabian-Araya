@@ -2,20 +2,20 @@ const content = {
     prof: {
         title: "Schola Musicae",
         bioP: "Este proyecto es una aplicación móvil que permite gestionar los servicios de una cadena de sucursales musicales, con funcionalidades para administrar clientes y servicios.",
-        img: ""
+        img: "https://cdn.pixabay.com/photo/2025/06/27/00/24/00-24-44-694__340.png"
     },
     info: [
         {
             id: 1,
             title: "Características",
             explain: "La aplicación permite a los usuarios gestionar distintos tipos de datos, incluyendo la administración de clientes, sucursales y servicios.",
-            img: "",
+            img: "https://cdn.pixabay.com/photo/2025/06/27/00/20/00-20-49-406__340.png",
         },
         {
             id: 2,
             title: "Tecnologías Utilizadas",
             explain: "Esta app utiliza C#, Visual Studio 2022 y Xamarin.Forms para el desarrollo móvil, lo que permite crear aplicaciones nativas para Android.",
-            img: "",
+            img: "https://cdn.pixabay.com/photo/2025/06/27/00/29/00-29-42-417__340.png",
         },
         {
             id: 3,
